@@ -4,10 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cloud1">
   <title>Assignment 1</title>
   <style>
-    
+    cloud1{
+     .cloud {
+     position: absolute;
+     background-color: #FFFFFF; /* 白色 */
+     width: 200px;
+     height: 60px;
+     border-radius: 50px;
+     box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.1);
+     }
+     .cloud::before, .cloud::after {
+     content: '';
+     position: absolute;
+     background-color: #FFFFFF;
+     width: 100px;
+     height: 60px;
+     border-radius: 50px;
+     }
+     .cloud::before {
+     top: -30px;
+     left: 20px;
+     }
+     .cloud::after {
+     top: -20px;
+     right: 20px;
+     }
+    }
     body {
       font-family: 'Playfair Display', sans-serif; 
       font-size: 14px;
